@@ -31,7 +31,8 @@ namespace ProblemSolutions_Tests
         public void IsUnique_BoundaryStringProvided_ReturnTrue()
         {
             //Arrange
-            var stringToTest = " |";
+            var stringToTest = ((char)IsUnique.GetFirstChar()).ToString()
+                               +((char)IsUnique.GetLastChar()).ToString();
 
             //Act
             var res = IsUnique.Solution001_JustASCII(stringToTest);
@@ -45,7 +46,7 @@ namespace ProblemSolutions_Tests
         {
             //Arrange
             var builder = new StringBuilder();
-            for (int i = 0x20; i < 0x7E; i++)
+            for (int i = IsUnique.GetFirstChar() ; i <= IsUnique.GetLastChar(); i++)
             {
                 builder.Append((char)i);
             }
