@@ -1,4 +1,4 @@
-package codesolutions.arraysandstrings;
+package crackingthecodinginterview.codesolutions.arraysandstrings;
 
 class CharCount {
     private int compressionChar = 0;

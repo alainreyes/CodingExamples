@@ -1,6 +1,6 @@
-package test.arraysandstrings;
+package crackingthecodinginterview.test.arraysandstrings;
 
-import codesolutions.arraysandstrings.StringCompression;
+import crackingthecodinginterview.codesolutions.arraysandstrings.StringCompression;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
