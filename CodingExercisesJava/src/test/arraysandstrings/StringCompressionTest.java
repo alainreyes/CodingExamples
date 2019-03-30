@@ -1,13 +1,14 @@
 package test.arraysandstrings;
 
-import org.junit.Assert;
-
 import codesolutions.arraysandstrings.StringCompression;
+import org.junit.Assert;
+import org.junit.jupiter.api.Test;
+
 
 class StringCompressionTest {
 
-    @org.junit.jupiter.api.Test
-    void solution000() {
+    @Test
+    void solution000_exampleProvidedString_returnCompressedResult() {
         //arrange
         var compressor = new StringCompression();
 
@@ -15,6 +16,19 @@ class StringCompressionTest {
         var res = compressor.solution000("aabcccccaaa");
 
         //assert
-        Assert.assertTrue(res.equals("a2b1c5a3"));
+        Assert.assertEquals("a2b1c5a3", res);
     }
+
+    @Test
+    void solution000_allUniqueCharacters_returnOriginalString() {
+        //arrange
+        var compressor = new StringCompression();
+
+        //act
+        var res = compressor.solution000("abcdefghijkl");
+
+        //assert
+        Assert.assertEquals("abcdefghijkl", res);
+    }
+
 }
