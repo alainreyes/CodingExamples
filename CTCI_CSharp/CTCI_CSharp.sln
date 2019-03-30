@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemSolutions", "Problem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemSolutions_Tests", "ProblemSolutions_Tests\ProblemSolutions_Tests.csproj", "{2C56ADC4-960E-426A-8F24-528786535208}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cracking the coding Interview", "Cracking the coding Interview", "{A56652BC-8C07-4EA7-850A-E55AF608765A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{2C56ADC4-960E-426A-8F24-528786535208}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C56ADC4-960E-426A-8F24-528786535208}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C56ADC4-960E-426A-8F24-528786535208}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47909879-2826-4F2B-BA8F-93CC260F2C38} = {A56652BC-8C07-4EA7-850A-E55AF608765A}
+		{2C56ADC4-960E-426A-8F24-528786535208} = {A56652BC-8C07-4EA7-850A-E55AF608765A}
 	EndGlobalSection
 EndGlobal
