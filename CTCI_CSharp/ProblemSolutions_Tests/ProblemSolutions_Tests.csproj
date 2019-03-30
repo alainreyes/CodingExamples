@@ -42,7 +42,8 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="ArraysAndStrings\IsUnique_JustASCII.cs" />
+        <Compile Include="ArraysAndStrings\IsUnique_ExtraDataStructure_JustASCII.cs" />
+        <Compile Include="ArraysAndStrings\IsUnique_WithoutExtraDataStructures.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
