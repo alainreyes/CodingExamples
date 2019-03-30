@@ -29,11 +29,16 @@ namespace ProblemSolutions.ArraysAndStrings
         //https://en.wikipedia.org/wiki/ASCII
         public static bool Solution000_JustASCII(string stringToTest)
         {
-            int[] allPossibleUniqueChars = new int[CharDictionarySize()];
+            if (stringToTest.Length > CharDictionarySize())
+            {
+                return false;
+            }
+            
+            var allPossibleUniqueChars = new int[CharDictionarySize()];
             
             foreach (var individualChar in stringToTest.ToCharArray())
             {
-                int position = (int) individualChar - GetFirstChar();
+                var position = (int) individualChar - GetFirstChar();
                 if (position >= allPossibleUniqueChars.Length)
                 {
                     throw new ArgumentException(
