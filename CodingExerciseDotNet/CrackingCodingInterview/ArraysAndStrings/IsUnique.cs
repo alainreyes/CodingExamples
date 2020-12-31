@@ -1,7 +1,7 @@
-using System;
-using System.Reflection.Emit;
 
-namespace ProblemSolutions.ArraysAndStrings
+using System;
+
+namespace CrackingCodingInterview.ArraysAndStrings
 {
     //Implement an algorithm to determine if a string has all unique characters.
     //what if you cannot use additional data structures
